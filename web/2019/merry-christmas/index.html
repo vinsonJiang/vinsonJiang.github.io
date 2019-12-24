@@ -74,6 +74,11 @@
 <script type="text/javascript" src="js/textimg.js"></script>
 
 <script>
+    document.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        e.stopPropagation();
+    },{passive:false});
+
     $(document).ready(function() {
 
         /* random trees */
